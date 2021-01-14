@@ -6,6 +6,8 @@ Static build of openssl-1.1.1d With MinGW Compiler
 - after downloaded, extract it, ie C:\openssl-1.1.1i
 - to extract this, you need 7zip (download from this - https://www.7-zip.org/download.html)
 
+![1](https://user-images.githubusercontent.com/17219341/104559223-7e4a6f80-5672-11eb-8010-f1843823396d.png)
+
 - go https://www.msys2.org/wiki/MSYS2-installation/ and download 32bit or 64bit as you need
 - i choose  to download 'msys2-x86_64-20210105.exe' and install this
 - run msys2 console
