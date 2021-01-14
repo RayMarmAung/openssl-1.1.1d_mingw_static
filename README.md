@@ -19,6 +19,10 @@ Static build of openssl-1.1.1d With MinGW Compiler
 - type 'pacman -S mingw-w64-x86_64-gcc' if you need 64 bit
 - install both mingw 32bit and 64bit if you have plan to build both 32bit/64bit release
 
+![2](https://user-images.githubusercontent.com/17219341/104559229-7f7b9c80-5672-11eb-8fb7-e1296b11719a.png)
+![3](https://user-images.githubusercontent.com/17219341/104559233-80143300-5672-11eb-9b8e-f210430adadb.png)
+![4](https://user-images.githubusercontent.com/17219341/104559209-7985bb80-5672-11eb-9487-2ed05de5b482.png)
+
 After this, 
 you need to set environment path
 if you installed msys2 32 bit and want to build on 32 bit mingw
@@ -30,10 +34,13 @@ if you installed msys2 32 bit and want to build on 32 bit mingw
 if you installed msys2 64 bit and want to build on 64 bit mingw
 - export PATH="/c/msys64/mingw64/bin:$PATH"
 
+![5](https://user-images.githubusercontent.com/17219341/104559213-7be81580-5672-11eb-83b9-154a05f05399.png)
+
 after this, check gcc path is ok for this command
 - which gcc
 if it shows gcc path, it's ok
 
+![6](https://user-images.githubusercontent.com/17219341/104559215-7c80ac00-5672-11eb-8a2e-a14c2363de3c.png)
 
 now ready to build 
 - make 'C:\openssl_release' dir for making release files
@@ -43,6 +50,8 @@ and make configure with this command
 - './Configure --prefix=/c/openssl_release --openssldir=/c/openssl_release no-threads no-idea no-shared mignw' (32 bit mingw)
 - './Configure --prefix=/c/openssl_release --openssldir=/c/openssl_release no-threads no-idea no-shared mignww64' (64 bit mingw)
 if you need dynamic library, change no-shared to shared
+
+![7](https://user-images.githubusercontent.com/17219341/104559220-7d194280-5672-11eb-85fc-8dc7e9f17529.png)
 
 after configure, ready to build type these commands
 - make depend
