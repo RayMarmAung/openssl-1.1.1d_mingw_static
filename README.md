@@ -60,3 +60,5 @@ after configure, ready to build type these commands
 
 that's all 
 your static library is on c:\openssl_release\lib
+
+if you need to make qt static build, need these libs OPENSSL_LIBS="-llibssl -llibcrypto -lcrypt32 -lgdi32 -lws2_32"
